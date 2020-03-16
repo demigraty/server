@@ -237,6 +237,6 @@ router.put("/users/upload", (req, res) => {
 
 // and finally,  lets listen
 const port = 4010;
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
